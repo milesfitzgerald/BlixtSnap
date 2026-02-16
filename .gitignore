@@ -1,0 +1,11 @@
+# Build artifacts
+QuickSnap.app/
+build/
+DerivedData/
+
+# Xcode user-specific
+*.xcuserstate
+xcuserdata/
+
+# macOS
+.DS_Store

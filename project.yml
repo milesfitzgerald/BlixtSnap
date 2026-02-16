@@ -1,0 +1,33 @@
+name: QuickSnap
+options:
+  deploymentTarget:
+    macOS: "13.0"
+  xcodeVersion: "15.0"
+  bundleIdPrefix: com.quicksnap
+
+packages:
+  HotKey:
+    url: https://github.com/soffes/HotKey
+    from: 0.2.1
+
+targets:
+  QuickSnap:
+    type: application
+    platform: macOS
+    sources:
+      - QuickSnap
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.quicksnap.QuickSnap
+        INFOPLIST_FILE: QuickSnap/Info.plist
+        ENABLE_HARDENED_RUNTIME: YES
+        CODE_SIGN_IDENTITY: "-"
+        PRODUCT_NAME: QuickSnap
+        SWIFT_VERSION: "5.9"
+        MACOSX_DEPLOYMENT_TARGET: "13.0"
+    entitlements:
+      path: QuickSnap/QuickSnap.entitlements
+      properties:
+        com.apple.security.app-sandbox: false
+    dependencies:
+      - package: HotKey
