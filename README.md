@@ -23,6 +23,8 @@ A lightweight macOS menu bar app that captures screenshots without polluting you
 
 **Blixt** — Swedish for lightning and also the name of my dear friend ;)
 
+Click here **[Get Started](https://milesfitzgerald.github.io/BlixtSnap/#install)**
+
 ## How It Works
 
 1. Press **Cmd+Shift+6** from any app
@@ -38,7 +40,7 @@ No files saved. No Desktop clutter. Just clipboard.
 Requires **macOS 13+** and **Xcode 15+**.
 If you are using Claude Code just paste the link to this page and ask to pull.
 
-**[Get Started](https://milesfitzgerald.github.io/BlixtSnap/#install)**
+
 
 ```bash
 # Clone
