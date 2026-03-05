@@ -341,6 +341,27 @@
     .code-block .comment { color: var(--muted); }
     .code-block .cmd { color: var(--text); }
 
+    /* Support */
+    .support {
+      padding: 60px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+    .support-text {
+      font-size: 16px;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+    .qr-code {
+      width: 160px;
+      height: auto;
+      border-radius: 12px;
+      transition: transform 0.2s;
+    }
+    .qr-code:hover {
+      transform: scale(1.05);
+    }
+
     /* Footer */
     footer {
       padding: 40px 0;
@@ -486,6 +507,15 @@
         <span class="comment"># Press Cmd+R in Xcode</span>
       </div>
       <p style="color: var(--muted); font-size: 13px; margin-top: 16px;">Requires macOS 13+ and Xcode 15+. Grant Screen Recording permission on first capture.</p>
+    </div>
+  </section>
+
+  <section class="support">
+    <div class="container">
+      <p class="support-text">If you find BlixtSnap useful, consider buying me a coffee.</p>
+      <a href="https://buymeacoffee.com/milesfitzgerald">
+        <img src="bmac-qr.png" alt="Buy Me a Coffee" class="qr-code">
+      </a>
     </div>
   </section>
 
