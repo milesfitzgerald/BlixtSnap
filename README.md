@@ -21,7 +21,7 @@
 
 A lightweight macOS menu bar app that captures screenshots without polluting your Desktop.
 
-**Blixt** — Swedish for lightning and also the name of my good friend ;)
+**Blixt** — Swedish for lightning and also the name of my dear friend ;)
 
 ## How It Works
 
