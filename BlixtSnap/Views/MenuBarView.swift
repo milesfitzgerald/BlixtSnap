@@ -26,7 +26,7 @@ struct MenuBarView: View {
             Divider()
         }
 
-        Button("Quit QuickSnap") {
+        Button("Quit BlixtSnap") {
             NSApplication.shared.terminate(nil)
         }
         .keyboardShortcut("q")

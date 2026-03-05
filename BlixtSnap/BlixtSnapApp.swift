@@ -1,12 +1,12 @@
 import SwiftUI
 
 @main
-struct QuickSnapApp: App {
+struct BlixtSnapApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @StateObject private var captureState = CaptureState()
 
     var body: some Scene {
-        MenuBarExtra("QuickSnap", systemImage: "camera.viewfinder") {
+        MenuBarExtra("BlixtSnap", systemImage: "camera.viewfinder") {
             MenuBarView(captureState: captureState)
                 .onAppear {
                     appDelegate.setupHotKey(with: captureState)

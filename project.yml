@@ -1,9 +1,9 @@
-name: QuickSnap
+name: BlixtSnap
 options:
   deploymentTarget:
     macOS: "13.0"
   xcodeVersion: "15.0"
-  bundleIdPrefix: com.quicksnap
+  bundleIdPrefix: com.blixtsnap
 
 packages:
   HotKey:
@@ -11,22 +11,22 @@ packages:
     from: 0.2.1
 
 targets:
-  QuickSnap:
+  BlixtSnap:
     type: application
     platform: macOS
     sources:
-      - QuickSnap
+      - BlixtSnap
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.quicksnap.QuickSnap
-        INFOPLIST_FILE: QuickSnap/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.blixtsnap.BlixtSnap
+        INFOPLIST_FILE: BlixtSnap/Info.plist
         ENABLE_HARDENED_RUNTIME: YES
         CODE_SIGN_IDENTITY: "-"
-        PRODUCT_NAME: QuickSnap
+        PRODUCT_NAME: BlixtSnap
         SWIFT_VERSION: "5.9"
         MACOSX_DEPLOYMENT_TARGET: "13.0"
     entitlements:
-      path: QuickSnap/QuickSnap.entitlements
+      path: BlixtSnap/BlixtSnap.entitlements
       properties:
         com.apple.security.app-sandbox: false
     dependencies:

@@ -48,7 +48,7 @@ brew install xcodegen
 xcodegen generate
 
 # Build
-open QuickSnap.xcodeproj
+open BlixtSnap.xcodeproj
 # Press Cmd+R in Xcode
 ```
 
@@ -65,8 +65,8 @@ Grant it in **System Settings > Privacy & Security > Screen Recording**.
 ## Project Structure
 
 ```
-QuickSnap/
-  QuickSnapApp.swift           App entry point, MenuBarExtra
+BlixtSnap/
+  BlixtSnapApp.swift           App entry point, MenuBarExtra
   Models/
     CaptureState.swift         Capture flow coordinator
   Services/

@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08A63DB755AD669DA390DE4F /* ScreenCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732152FA9FB8AA69BA9EBA18 /* ScreenCaptureService.swift */; };
+		18FC141DF76668BD158A8E8C /* ClipboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996DE4FEB2ADA5D4C7B36FA9 /* ClipboardService.swift */; };
+		2304690D4AC944216BED13C0 /* HotKeyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7889788030BE6E15328CBAC6 /* HotKeyService.swift */; };
+		841A123AA7ED6DE7623437EB /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62C521E84A6E5F7FB19FD5F /* PreviewView.swift */; };
+		9624F98655025AE23D9D5229 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08B3A33A404403B61D0DAB0 /* MenuBarView.swift */; };
+		9C8F58C23E0C566D7D786B40 /* PreviewPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E02469CD1D69772E954098 /* PreviewPanel.swift */; };
+		A4AE8E8C04674143EC3E11F5 /* BlixtSnapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F6E472151B75AE33DD8ED2 /* BlixtSnapApp.swift */; };
+		ABE1FF60D9AEF7603E994751 /* CaptureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A54A8D5A07AF529CEEA82 /* CaptureState.swift */; };
+		DECA6F7596B12C9EAA08B6AB /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = B97A37CD5A68037E1CD1D34C /* HotKey */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		45E02469CD1D69772E954098 /* PreviewPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPanel.swift; sourceTree = "<group>"; };
+		732152FA9FB8AA69BA9EBA18 /* ScreenCaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenCaptureService.swift; sourceTree = "<group>"; };
+		7889788030BE6E15328CBAC6 /* HotKeyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotKeyService.swift; sourceTree = "<group>"; };
+		7F3A54A8D5A07AF529CEEA82 /* CaptureState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureState.swift; sourceTree = "<group>"; };
+		95F6E472151B75AE33DD8ED2 /* BlixtSnapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlixtSnapApp.swift; sourceTree = "<group>"; };
+		984F5A1468594A6EF9D27E38 /* BlixtSnap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlixtSnap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		996DE4FEB2ADA5D4C7B36FA9 /* ClipboardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardService.swift; sourceTree = "<group>"; };
+		A91487E2E598F113C64E147F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C08B3A33A404403B61D0DAB0 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		CFF011999976CD94B6DED461 /* BlixtSnap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlixtSnap.entitlements; sourceTree = "<group>"; };
+		E62C521E84A6E5F7FB19FD5F /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8836329B5C3157CBE3E8E504 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DECA6F7596B12C9EAA08B6AB /* HotKey in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0965C72EBB1815460D16810A /* BlixtSnap */ = {
+			isa = PBXGroup;
+			children = (
+				CFF011999976CD94B6DED461 /* BlixtSnap.entitlements */,
+				95F6E472151B75AE33DD8ED2 /* BlixtSnapApp.swift */,
+				A91487E2E598F113C64E147F /* Info.plist */,
+				79F3DA441934172E70B87E3E /* Models */,
+				4B4719BF53B31FA9B63DDC6B /* Services */,
+				618DF7E37F97DCF7A4CBF284 /* Views */,
+			);
+			path = BlixtSnap;
+			sourceTree = "<group>";
+		};
+		0FFF6DDC5AAC9F0728E676D0 = {
+			isa = PBXGroup;
+			children = (
+				0965C72EBB1815460D16810A /* BlixtSnap */,
+				7A9FD9D200A9BE1E3F0EBF4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B4719BF53B31FA9B63DDC6B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				996DE4FEB2ADA5D4C7B36FA9 /* ClipboardService.swift */,
+				7889788030BE6E15328CBAC6 /* HotKeyService.swift */,
+				732152FA9FB8AA69BA9EBA18 /* ScreenCaptureService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		618DF7E37F97DCF7A4CBF284 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C08B3A33A404403B61D0DAB0 /* MenuBarView.swift */,
+				45E02469CD1D69772E954098 /* PreviewPanel.swift */,
+				E62C521E84A6E5F7FB19FD5F /* PreviewView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		79F3DA441934172E70B87E3E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7F3A54A8D5A07AF529CEEA82 /* CaptureState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7A9FD9D200A9BE1E3F0EBF4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				984F5A1468594A6EF9D27E38 /* BlixtSnap.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95ECEFEA87B1B9CD41042CF5 /* BlixtSnap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD95A549233A82AE5ED7BBD6 /* Build configuration list for PBXNativeTarget "BlixtSnap" */;
+			buildPhases = (
+				1A89C8769DAF1D88F4A02C80 /* Sources */,
+				8836329B5C3157CBE3E8E504 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlixtSnap;
+			packageProductDependencies = (
+				B97A37CD5A68037E1CD1D34C /* HotKey */,
+			);
+			productName = BlixtSnap;
+			productReference = 984F5A1468594A6EF9D27E38 /* BlixtSnap.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		456569B99D98775F238E49BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 201F3B6C651E077C9394FAFC /* Build configuration list for PBXProject "BlixtSnap" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 0FFF6DDC5AAC9F0728E676D0;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5DA39E65E43636C5342A2055 /* XCRemoteSwiftPackageReference "HotKey" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95ECEFEA87B1B9CD41042CF5 /* BlixtSnap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A89C8769DAF1D88F4A02C80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4AE8E8C04674143EC3E11F5 /* BlixtSnapApp.swift in Sources */,
+				ABE1FF60D9AEF7603E994751 /* CaptureState.swift in Sources */,
+				18FC141DF76668BD158A8E8C /* ClipboardService.swift in Sources */,
+				2304690D4AC944216BED13C0 /* HotKeyService.swift in Sources */,
+				9624F98655025AE23D9D5229 /* MenuBarView.swift in Sources */,
+				9C8F58C23E0C566D7D786B40 /* PreviewPanel.swift in Sources */,
+				841A123AA7ED6DE7623437EB /* PreviewView.swift in Sources */,
+				08A63DB755AD669DA390DE4F /* ScreenCaptureService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5EE97871C6B345A5F9A31B11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		698F11B6D94ABE34BF91775E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7D04BC4D6728BB28EA8FF543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BlixtSnap/BlixtSnap.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = BlixtSnap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blixtsnap.BlixtSnap;
+				PRODUCT_NAME = BlixtSnap;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		EAEF251295A9AC4138213053 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BlixtSnap/BlixtSnap.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = BlixtSnap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blixtsnap.BlixtSnap;
+				PRODUCT_NAME = BlixtSnap;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		201F3B6C651E077C9394FAFC /* Build configuration list for PBXProject "BlixtSnap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EE97871C6B345A5F9A31B11 /* Debug */,
+				698F11B6D94ABE34BF91775E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BD95A549233A82AE5ED7BBD6 /* Build configuration list for PBXNativeTarget "BlixtSnap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D04BC4D6728BB28EA8FF543 /* Debug */,
+				EAEF251295A9AC4138213053 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5DA39E65E43636C5342A2055 /* XCRemoteSwiftPackageReference "HotKey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soffes/HotKey";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B97A37CD5A68037E1CD1D34C /* HotKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DA39E65E43636C5342A2055 /* XCRemoteSwiftPackageReference "HotKey" */;
+			productName = HotKey;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 456569B99D98775F238E49BA /* Project object */;
+}
