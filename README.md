@@ -77,3 +77,13 @@ QuickSnap/
     PreviewPanel.swift         Floating preview window
     PreviewView.swift          Screenshot thumbnail view
 ```
+
+## Support
+
+If you find BlixtSnap useful, consider buying me a coffee!
+
+<p align="center">
+  <a href="https://buymeacoffee.com/milesfitzgerald">
+    <img src="assets/bmac-qr.png" alt="Buy Me a Coffee" width="200">
+  </a>
+</p>
