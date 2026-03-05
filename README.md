@@ -36,7 +36,9 @@ No files saved. No Desktop clutter. Just clipboard.
 ## Build & Run
 
 Requires **macOS 13+** and **Xcode 15+**.
-If you are using Claude Code just paste the link to this page and ask to pull. 
+If you are using Claude Code just paste the link to this page and ask to pull.
+
+**[Get Started](https://milesfitzgerald.github.io/BlixtSnap/#install)**
 
 ```bash
 # Clone
