@@ -81,9 +81,7 @@ QuickSnap/
 ## Support
 
 If you find BlixtSnap useful, consider buying me a coffee!
+https://buymeacoffee.com/milesfitzgerald
 
-<p align="center">
-  <a href="https://buymeacoffee.com/milesfitzgerald">
-    <img src="assets/bmac-qr.png" alt="Buy Me a Coffee" width="200">
-  </a>
-</p>
+<img width="100" height="100" alt="qr-code" src="https://github.com/user-attachments/assets/996a0864-822c-49d3-897d-ec4374c39725" />
+
