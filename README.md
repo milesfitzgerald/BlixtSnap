@@ -21,7 +21,7 @@
 
 A lightweight macOS menu bar app that captures screenshots without polluting your Desktop.
 
-**Blixt** — Swedish for lightning. Snap a screenshot in a flash.
+**Blixt** — Swedish for lightning and also the name of my good friend ;)
 
 ## How It Works
 
@@ -36,6 +36,7 @@ No files saved. No Desktop clutter. Just clipboard.
 ## Build & Run
 
 Requires **macOS 13+** and **Xcode 15+**.
+If you are using Claude Code just paste the link to this page and ask to pull. 
 
 ```bash
 # Clone
