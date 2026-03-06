@@ -92,12 +92,31 @@
       letter-spacing: -0.03em;
       margin-bottom: 20px;
     }
-    h1 em {
-      font-style: normal;
-      background: linear-gradient(135deg, var(--accent), #818cf8);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+    .morph-line {
+      display: inline-block;
+      position: relative;
+      vertical-align: bottom;
+      overflow: hidden;
+    }
+    .morph-line .morph-text {
+      display: inline-block;
+      color: var(--accent);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+    .morph-line .morph-text.exit {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    .morph-line .morph-text.enter {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    .morph-line .morph-text.active {
+      opacity: 1;
+      transform: translateY(0);
     }
     .subtitle {
       font-size: 18px;
@@ -403,7 +422,7 @@
     <div class="container">
       <img src="hero.png" alt="Claude Code" class="hero-img">
       <div class="badge">Built for Claude Code users</div>
-      <h1>Capture context.<br><em>Skip the clutter.</em></h1>
+      <h1>Capture context.<br><span class="morph-line"><span class="morph-text active" id="morph-current">Skip the clutter.</span></span></h1>
       <p class="subtitle">A tiny macOS menu bar app that sends screenshots straight to your clipboard. No files. No Desktop mess. Just capture, paste, prompt.</p>
       <div class="cta-group">
         <a href="https://github.com/milesfitzgerald/BlixtSnap" class="btn btn-primary">
@@ -526,5 +545,33 @@
     </div>
   </footer>
 
+  <script>
+    (function() {
+      var phrases = ['Skip the clutter.', 'Paste the context.', 'Ship faster.', 'Stay in flow.'];
+      var i = 0;
+      var container = document.querySelector('.morph-line');
+
+      setInterval(function() {
+        i = (i + 1) % phrases.length;
+        var old = container.querySelector('.morph-text');
+        old.classList.remove('active');
+        old.classList.add('exit');
+
+        var next = document.createElement('span');
+        next.className = 'morph-text enter';
+        next.textContent = phrases[i];
+        container.appendChild(next);
+
+        requestAnimationFrame(function() {
+          requestAnimationFrame(function() {
+            next.classList.remove('enter');
+            next.classList.add('active');
+          });
+        });
+
+        setTimeout(function() { old.remove(); }, 450);
+      }, 3000);
+    })();
+  </script>
 </body>
 </html>
